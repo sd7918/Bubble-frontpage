@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth ;
+}
+.hero{
+    background: url("/background.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    /* padding: 20px; */
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+button{
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 20px;
+    outline: none;
+    cursor:  pointer;
+    border: 2px solid white;
+    color: white;
+}
+button:hover{
+background-color: rgba(255, 255, 255, 0.114);
+color:black;
+}
+.content{
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.content small{
+    font-size: 18px;
+}
+h1{
+    font-size: 70px;
+    margin: 10px 0 0px;
+    line-height: 80px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+p span{
+    font-size: 30px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(100deg,#ff5100, #ffd0bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.163),rgba(255, 255, 255, 0.143));
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu{
+    cursor: pointer;
+    display: block;
+    margin: 45px auto 0;
+    width: 25px;
+}
+.side-links box-icon,.slide-links box-icon{
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.side-links{
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide-links{
+    width: 50px;
+    /* color: white; */
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubbles 7s linear infinite;
+}
+.bubbles{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: -70px;
+}
+@keyframes bubbles{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 4s;
+    width: 30px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 1.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 6s;
+    width: 70px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 45px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 5s;
+    width: 30px;
+}
+.bubbles img:nth-child(7){
+    animation-delay:3.5s;
+    width: 70px;
+}
+
+@media screen and (max-width:450px){
+    
+    h1{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    p{
+        font-size: 18px;
+    }
+    p span{
+        font-size: 25px;
+    }
+    .side-bar{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background:linear-gradient(to right,rgba(0, 0, 0, 0.332),rgba(255, 255, 255, 0.115));
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+        bottom: 0;
+        top: auto;
+    }
+    .side-links{
+        width:auto;
+        position: unset;
+        transform:none;
+    }
+    .slide-links{
+        width: auto;
+        position: unset;
+        /* transform: none; */
+    }
+    .menu{
+        margin: 0;
+        width: 18px;
+    }
+    .logo{
+        width: 110px;
+    }
+    button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+
+
+
+
+/*  */
